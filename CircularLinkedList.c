@@ -6,6 +6,56 @@ typedef struct CLLNode {
 	CLLNode * next;
 };
 
+void InsertAtFrontCLL(CLLNode **head, int data)
+{
+	CLLNode * current = *head;
+	CLLNode * newNode = (CLLNode*)malloc(sizeof(CLLNode));
+
+	if (!newNode)
+		printf("Memory error");
+	newNode->data = data;
+	newNode->next = newNode;
+
+	while (current->next != *head)
+		current = current->next;
+
+	if (head == NULL)
+	{
+		*head = newNode;
+	}
+	else
+	{
+		newNode->next = *head;
+		current->next = newNode;
+		*head = newNode;
+	}
+}
+
+
+void InsertAtEndCLL(CLLNode **head, int data)
+{
+	CLLNode * current = *head;
+	CLLNode * newNode = (CLLNode*)malloc(sizeof(CLLNode));
+	
+	if (!newNode)
+		printf("Memory error");
+	newNode->data = data;
+	newNode->next = newNode;
+
+	while (current->next != *head)
+		current = current->next;
+
+	if (*head == NULL)
+	{
+		*head = newNode;
+	}
+	else
+	{
+		newNode->next = *head;
+		current->next = newNode;
+	}
+}
+
 void printCLLData(CLLNode *head)
 {
 	CLLNode * current = head;
