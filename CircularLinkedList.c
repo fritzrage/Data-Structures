@@ -6,6 +6,22 @@ typedef struct CLLNode {
 	CLLNode * next;
 };
 
+void printCLLData(CLLNode *head)
+{
+	CLLNode * current = head;
+	if (head == NULL)
+	{
+		printf("List is empty");
+		return;
+	}
+
+	do {
+
+		printf("%d\n", current->data);
+		current = current->next;
+	} while (current != head);
+}
+
 int CLLLength(CLLNode **head)
 {
 	CLLNode *current = *head;
