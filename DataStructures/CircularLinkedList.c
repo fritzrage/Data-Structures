@@ -87,19 +87,21 @@ int CLLLength(CLLNode **head)
 	return count;
 }
 
-int main()
-{
-	CLLNode *head = (CLLNode*)malloc((sizeof(CLLNode)));
-	head->data = 20;
-	head->next = (CLLNode*)malloc((sizeof(CLLNode)));
-
-	head->next->data = 30;
-	head->next->next = (CLLNode*)malloc((sizeof(CLLNode)));
-
-	head->next->next->data = 40;
-	head->next->next->next = head;
-
-	printf("Length of the list = %d\n", CLLLength(&head));
-
-	return 0;
-}
+//Main program for testing
+//
+//int main()
+//{
+//	CLLNode *head = (CLLNode*)malloc((sizeof(CLLNode)));
+//	head->data = 20;
+//	head->next = (CLLNode*)malloc((sizeof(CLLNode)));
+//
+//	head->next->data = 30;
+//	head->next->next = (CLLNode*)malloc((sizeof(CLLNode)));
+//
+//	head->next->next->data = 40;
+//	head->next->next->next = head;
+//
+//	printf("Length of the list = %d\n", CLLLength(&head));
+//
+//	return 0;
+//}

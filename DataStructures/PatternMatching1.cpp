@@ -51,16 +51,16 @@ void FindPattern(char MainStr[], char Pattern[])
 	printf("Total Comparisons = %d",Comparisons );
 }
 
-int main()
-{	
-	char a[50], b[50];
-	printf("Enter the main string:");
-	scanf("%s",&a);
-	printf("Enter the pattern string:");
-	scanf("%s",&b);
-	FindPattern(a,b);
-	getch();
-	return 0;
-}
-
-
+//Main program for testing
+//
+//int main()
+//{	
+//	char a[50], b[50];
+//	printf("Enter the main string:");
+//	scanf("%s",&a);
+//	printf("Enter the pattern string:");
+//	scanf("%s",&b);
+//	FindPattern(a,b);
+//	getch();
+//	return 0;
+//}

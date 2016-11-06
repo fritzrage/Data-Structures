@@ -92,20 +92,22 @@ void DLLInsert(struct DLLNode ** head, int data, int position)
 }
 
 
-int main()
-{
-	//Creating a sample doubly linked list with two items
-	DLLNode * head = (DLLNode*)malloc(sizeof(DLLNode));
-
-	head->prev = NULL;
-	head->next = (DLLNode*)malloc(sizeof(DLLNode));
-	head->data = 20;
-
-	head->next->prev = head;
-	head->next->next = NULL;
-	head->next->data = 30;
-
-	DLLInsert(&head, 35, 2); //testing insertion into list at position = 2
-
-	return 0;
-}
+//Main program for testing
+//
+//int main()
+//{
+//	//Creating a sample doubly linked list with two items
+//	DLLNode * head = (DLLNode*)malloc(sizeof(DLLNode));
+//
+//	head->prev = NULL;
+//	head->next = (DLLNode*)malloc(sizeof(DLLNode));
+//	head->data = 20;
+//
+//	head->next->prev = head;
+//	head->next->next = NULL;
+//	head->next->data = 30;
+//
+//	DLLInsert(&head, 35, 2); //testing insertion into list at position = 2
+//
+//	return 0;
+//}
