@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D251D95E-E3E4-4B27-AC5F-669F11F1398D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
